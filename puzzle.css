@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0; /* Color de fondo */
+    background-image: url('path_to_your_background_image.jpg'); /* Opcional: imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 10px;
+    color: #333; /* Color del texto */
+}
+
+button {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Cambio de color al pasar el cursor sobre el botón */
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 500px; /* Ancho máximo del contenedor */
+    margin: 20px auto; /* Centrado en la pantalla */
+    background: linear-gradient(to bottom, #ffffff, #f2f2f2); /* Gradiente de fondo */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border: 1px solid #ccc; /* Borde ligero */
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(5, 80px);
+    grid-gap: 2px;
+    border: 1px solid #ccc; /* Color del borde del tablero */
+    background-color: white; /* Color de fondo del tablero */
+    width: 400px; /* Ancho del tablero */
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#board img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #9C27B0; /* Color del borde de las piezas del tablero */
+    transition: transform 0.2s ease-in-out;
+}
+
+#board img:hover {
+    transform: scale(1.1); /* Efecto de escala al pasar el ratón sobre las piezas */
+}
+
+#pieces {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    gap: 2px;
+    width: 400px; /* Ancho del contenedor de piezas */
+    border: 1px solid #ccc; /* Color del borde del contenedor de piezas */
+    background-color: white; /* Color de fondo del contenedor de piezas */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#pieces img {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #9C27B0; /* Color del borde de las piezas */
+    transition: transform 0.2s ease-in-out;
+}
+
+#pieces img:hover {
+    transform: scale(1.1); /* Efecto de escala al pasar el ratón sobre las piezas */
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #4CAF50; /* Color del mensaje de felicitación */
+}
